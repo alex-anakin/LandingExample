@@ -1,3 +1,10 @@
-/**
- * Created by alex-anakin on 12.12.2015.
- */
+$(document).ready(function() {
+    /* === Chrome Smooth Scroll ======================*/
+    try {
+        $.browserSelector();
+        if($("html").hasClass("chrome")) {
+            $.smoothScroll();
+        }
+    } catch(err) {/* Do nothing */}
+
+});
